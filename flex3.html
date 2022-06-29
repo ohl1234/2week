@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font: inherit;
+        }
+        body{
+            line-height: 1;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        img{
+            max-width: 100%;
+            vertical-align: top;
+        }
+        ul,li{
+            list-style: none;
+        }
+        .blind{
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            clip: rect(0,0,0,0);
+            overflow: hidden;
+            margin: -1px;
+        }
+
+        header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 200px;
+            background-color: #ddd;
+        }
+        header h1{
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #fff;
+        }
+        header h1 a{
+            display: block;
+            height: 100%;
+        }
+        header div{
+            width: 150px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #fff;
+        }
+        header .sns{
+            order: -1;
+        }
+
+        .visual{
+            position: relative;
+            height: 400px;
+            background-color: #ccc;
+        }
+        .visual .btn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60px;
+            height:60px;
+            line-height: 60px;
+            text-align: center;
+            background-color: #fff;
+
+        }
+        .visual .prev{
+            left: 30px;
+        }
+        .visual .next{
+            right: 30px;
+        }
+        .visual .pagination{
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+        .visual .pagination a{
+            width: 40px;
+            height: 40px;
+            margin: 0 20px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #fff;
+        }
+        .visual .pagination a.active{
+           background-color: #f00;
+        }
+
+        .event{
+            padding: 100px 0;
+        }
+        .event h2{
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold; 
+            font-size: 50px;
+        }
+        .event .event-list{
+            width: 800px;
+            margin: 0 auto;
+            display: flex;
+        }
+        .event .event-list > *+*{
+            margin-left: 10px;
+        }
+        .event .event-list .event-item a{
+            display: block;
+            padding: 10px;
+            background-color: #eee;
+        }
+        .event .event-list .event-item img{
+            width: 100%;
+            object-fit: cover;
+        }
+        .event .event-list .event-item p{
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+
+        .list{
+            padding: 100px 0;
+            background-color: #222;
+        }
+        .list ul{
+            width: 800px;
+            margin: 0 auto;
+        }
+        .list ul li{
+            height: 100px;
+            background-color: #fff;
+        }
+        .list ul li + li{
+            margin-top: 10px;
+        }
+        
+</style>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="#" class="logo">logo</a>
+        </h1>
+        <div class="sns">sns</div>
+        <div class="login">login</div>
+    </header>
+    <main>
+        <section class="visual">
+            <h2 class="blind">title</h2>
+            <span class="btn prev">prev</span>
+            <span class="btn next">next</span>
+            <div class="pagination">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+            </div>
+        </section>
+        <section class="event">
+            <h2>title</h2>
+            <ul class="event-list">
+                <li class="event-item">
+                    <a href="#">
+                        <img src="https://naverpa-phinf.pstatic.net/MjAyMjAxMDRfNzQg/MDAxNjQxMjczNTc3MjQw.orgglgRGFsXoRBu-2qoNzshDzC4NVbn7j4B7l-PIPKIg.ZXVKkMBNtUJ1zbig1SgkT7Z_dydyy8yZ-p3Wghb7hZUg.JPEG/115.jpg" alt="img">
+                        <p>txt</p>
+                    </a>
+                </li>
+                <li class="event-item">
+                    <a href="#">
+                        <img src="https://naverpa-phinf.pstatic.net/MjAyMjAxMDRfNzQg/MDAxNjQxMjczNTc3MjQw.orgglgRGFsXoRBu-2qoNzshDzC4NVbn7j4B7l-PIPKIg.ZXVKkMBNtUJ1zbig1SgkT7Z_dydyy8yZ-p3Wghb7hZUg.JPEG/115.jpg" alt="img">
+                        <p>txt</p>
+                    </a>
+                </li>
+                <li class="event-item">
+                    <a href="#">
+                        <img src="https://naverpa-phinf.pstatic.net/MjAyMjAxMDRfNzQg/MDAxNjQxMjczNTc3MjQw.orgglgRGFsXoRBu-2qoNzshDzC4NVbn7j4B7l-PIPKIg.ZXVKkMBNtUJ1zbig1SgkT7Z_dydyy8yZ-p3Wghb7hZUg.JPEG/115.jpg" alt="img">
+                        <p>txt</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="list">
+            <h2 class="blind">title</h2>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

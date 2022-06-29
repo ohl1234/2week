@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font: inherit;
+        }
+        body{
+            line-height: 1;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+        img{
+            max-width: 100%;
+            vertical-align: top;
+        }
+        ul,li{
+            list-style: none;
+        }
+        .blind{
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            clip: rect(0,0,0,0);
+            overflow: hidden;
+            margin: -1px;
+        }
+
+        header{
+            height: 100px;
+            background-color: #222;
+        }
+
+        main > *+*{
+            margin-top: 10px;
+        }
+        main > div:last-child > *+*{
+            margin-top: 10px;
+        }
+
+        .inner{
+            width: 800px;
+            margin: 10px auto 0;
+        }
+        .banner{
+            height: 100px;
+            background-color: #000;
+        }
+
+        .box1{
+            display: flex;
+            gap: 10px;
+        }
+        .box1 div{
+            flex: 1;
+            background-color: #f00;
+            height: 300px;
+        }
+        .box1 .right{
+            position: relative;
+        }
+        .box1 .right .btn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: #fff;
+        }
+        .box1 .right .prev{
+            left: 10px;
+        }
+        .box1 .right .next{
+            right: 10px;
+        }
+
+        .box2{
+            padding: 10px;
+            background-color: #000;
+        }
+        .box2 .list1{
+            display: flex;
+            /* gap: 10px; */
+            padding: 10px;
+            background-color: #fff;
+        }
+        .box2 .list1 div{
+            height: 100px;
+            background-color: #ddd;
+        }
+        .box2 .list1 div:first-child{
+            flex: 1;
+            margin-right: 10px;
+        }
+        .box2 .list1 div:last-child{
+            width: calc(20% - 5px);
+        }
+        .box2 .list2{
+            display: flex;
+            /* gap: 10px; */
+            padding: 0 10px 10px 10px;
+            background-color: #fff;
+        }
+        .box2 .list2 div{
+            height: 100px;
+            background-color: #ddd;
+        }
+        .box2 .list2 div:first-child{
+            flex: 1;
+            margin-right: 10px;
+        }
+        .box2 .list2 div:last-child{
+            width: calc(70% - 5px);
+        }
+
+        .box3{
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            background-color: #f00;
+        }
+        .box3 .notice{
+            line-height: 60px;
+        }
+        .box3 .navi{
+            display: flex;
+        }
+        .box3 .navi .btn{
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #000;
+        }
+
+        .box4 ul{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .box4 ul li{
+            width: calc((100% - 30px) / 4);
+        }
+        .box4 ul li a{
+            display: block;
+            padding: 10px;
+            background-color: #ddd;
+        }
+        .box4 ul li img{
+            width: 100%;
+            object-fit: cover;
+        }
+        .box4 ul li strong{
+            display: block;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #fff;
+        }
+        .box4 ul li p{
+            padding: 10px;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>headerr</header>
+    <main>
+        <div class="inner">
+            <section class="box1">
+                <h2 class="blind">title</h2>
+                <div class="left"></div>
+                <div class="right">
+                    <a href="#" class="btn prev">prev</a>
+                    <a href="#" class="btn next">next</a>
+                </div>
+            </section>
+        </div>
+        <div class="banner"></div>
+        <div class="inner">
+            <section class="box2">
+                <h2 class="blind">title</h2>
+                <div class="list1">
+                    <div>80</div>
+                    <div>20</div>
+                </div>
+                <div class="list2">
+                    <div>30</div>
+                    <div>70</div>
+                </div>
+            </section>
+            <section class="box3">
+                <h2 class="blind">title</h2>
+                <a href="#" class="notice">notice</a>
+                <div class="navi">
+                    <a href="#" class="btn prev">prev</a>
+                    <a href="#" class="btn prev">next</a>
+                </div>
+            </section>
+            <section class="box4">
+                <h2 class="blind">title</h2>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="https://s.pstatic.net/static/www/mobile/edit/20220628/mobile_164259406377.jpg" alt="img">
+                            <strong>sub-title</strong>
+                            <p>text</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://s.pstatic.net/static/www/mobile/edit/20220628/mobile_164259406377.jpg" alt="img">
+                            <strong>sub-title</strong>
+                            <p>text</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://s.pstatic.net/static/www/mobile/edit/20220628/mobile_164259406377.jpg" alt="img">
+                            <strong>sub-title</strong>
+                            <p>text</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://s.pstatic.net/static/www/mobile/edit/20220628/mobile_164259406377.jpg" alt="img">
+                            <strong>sub-title</strong>
+                            <p>text</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://s.pstatic.net/static/www/mobile/edit/20220628/mobile_164259406377.jpg" alt="img">
+                            <strong>sub-title</strong>
+                            <p>text</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://s.pstatic.net/static/www/mobile/edit/20220628/mobile_164259406377.jpg" alt="img">
+                            <strong>sub-title</strong>
+                            <p>text</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://s.pstatic.net/static/www/mobile/edit/20220628/mobile_164259406377.jpg" alt="img">
+                            <strong>sub-title</strong>
+                            <p>text</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://s.pstatic.net/static/www/mobile/edit/20220628/mobile_164259406377.jpg" alt="img">
+                            <strong>sub-title</strong>
+                            <p>text</p>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

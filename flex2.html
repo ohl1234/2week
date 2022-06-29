@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: #ccc;
+        }
+
+        header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 100%;
+            background-color: #f00;
+        }
+
+        main{
+            margin: 10px 10px 10px 160px;
+        }
+        main > *+*{
+            margin-top: 10px;
+        }
+
+        .box1,.box3,.box4{
+            height: 200px;
+            background-color: #fff;
+        }
+
+        .box2{
+            display: flex;
+            gap: 10px;
+        }
+        .box2 div{
+            flex: 1;
+            height: 200px;
+            background-color: #fff;
+        }
+
+        .box5{
+            display: flex;
+            justify-content: space-between;
+        }
+        .box5 div{
+            width: calc(80% - 5px);
+            height: 200px;
+            background-color: #fff;
+        }
+        .box5 div:last-child{
+            width: calc(20% - 5px);
+        }
+
+        .box6{
+            display: flex;
+            justify-content: space-between;
+        }
+        .box6 div{
+            width: calc(30% - 5px);
+            height: 200px;
+            background-color: #fff;
+        }
+        .box6 div:last-child{
+            width: calc(70% - 5px);
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>
+        <div class="box1">box1</div>
+        <div class="box2">
+            <div>1</div>
+            <div>2</div>
+        </div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+        <div class="box5">
+            <div>80</div>
+            <div>20</div>
+        </div>
+        <div class="box6">
+            <div>30</div>
+            <div>70</div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>

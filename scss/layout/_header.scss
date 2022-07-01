@@ -1,0 +1,21 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 300px;
+    background-color: #ccc;
+
+    h1{
+        @include position-Center;
+        @include btn;
+
+        a{
+            display: block;
+            height: 100%;
+        }
+    }
+    div{
+        @include btn;
+    }
+}

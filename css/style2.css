@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  margin: -1px;
+}
+
+header .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 200px;
+  background-color: #ddd;
+}
+header .top h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+}
+header .top a {
+  display: block;
+  height: 100%;
+}
+header .top div {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+}
+header .bottom {
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+}
+header .bottom ul {
+  display: flex;
+}
+header .bottom li {
+  padding: 20px 30px;
+  background-color: pink;
+}
+
+footer {
+  height: 100px;
+  background-color: #ddd;
+}
+
+main {
+  width: 800px;
+  margin: 10px auto 0;
+}
+main div + div {
+  margin-top: 10px;
+}
+main .top-area {
+  padding: 10px;
+  background-color: #ccc;
+}
+main .top-area .box1 {
+  height: 100px;
+  background-color: #fff;
+}
+main .top-area .box1 + div {
+  margin-top: 10px;
+}
+main .top-area .box2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+}
+main .top-area .box2 .left {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-right: 10px;
+}
+main .top-area .box2 .left li {
+  width: calc((100% - 20px) / 3);
+  height: calc(50% - 5px);
+  background-color: #f00;
+}
+main .top-area .box2 .right {
+  width: 150px;
+  height: 210px;
+  background-color: #f00;
+}
+main .bottom-area {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #ddd;
+}
+main .bottom-area li + li {
+  margin-top: 10px;
+}
+main .bottom-area a {
+  display: flex;
+  justify-content: space-between;
+}
+main .bottom-area img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .bottom-area p {
+  flex: 1;
+  height: 100px;
+  background-color: #fff;
+}

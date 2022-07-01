@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  margin: -1px;
+}
+
+header .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  height: 200px;
+  background-color: #ddd;
+}
+header .top h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+}
+header .top a {
+  display: block;
+  height: 100%;
+}
+header .top div {
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+}
+header .bottom {
+  display: flex;
+  justify-content: center;
+  background-color: #eee;
+}
+header .bottom ul {
+  display: flex;
+}
+header .bottom li {
+  padding: 20px 30px;
+  background-color: pink;
+}
+
+footer {
+  height: 100px;
+  background-color: #ddd;
+}
+
+.visual {
+  position: relative;
+  height: 400px;
+  background-color: #ddd;
+}
+.visual .btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+}
+.visual .prev {
+  left: 20px;
+}
+.visual .next {
+  right: 20px;
+}
+.visual .pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.visual .pagination a {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #fff;
+}
+.visual .pagination a.active {
+  background-color: #f00;
+}
+
+.event {
+  padding: 100px 0;
+}
+.event h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 50px;
+}
+.event .event-list {
+  display: flex;
+  gap: 10px;
+  width: 800px;
+  margin: 0 auto;
+}
+.event .event-item {
+  flex: 1;
+}
+.event .event-item a {
+  display: block;
+  padding: 10px;
+  background-color: #ddd;
+}
+.event .event-item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.event .event-item p {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.list {
+  padding: 100px 0;
+  background-color: #222;
+}
+.list ul {
+  width: 800px;
+  margin: 0 auto;
+}
+.list li {
+  height: 100px;
+  background-color: #fff;
+}
+.list li + li {
+  margin-top: 10px;
+}

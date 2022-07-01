@@ -1,0 +1,85 @@
+.visual{
+    position: relative;
+    height: 400px;
+    background-color: #ddd;
+    .btn{
+        @include position-Slide;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        background-color: #fff;
+
+    }
+    .prev{
+        left: 20px;
+    }
+    .next{
+        right: 20px;
+    }
+    .pagination{
+        @include position-Page;
+        display: flex;
+        a{
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50%;
+            margin: 0 10px;
+            background-color: #fff;
+        }
+        a.active{
+            background-color: #f00;
+        }
+    }
+}
+
+.event{
+    padding: 100px 0;
+    h2{
+        margin-bottom: 20px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 50px;
+    }
+    .event-list{
+        display: flex;
+        gap: 10px;
+        width: 800px;
+        margin: 0 auto;
+    }
+    .event-item{
+        flex: 1;
+        a{
+            display: block;
+            padding: 10px;
+            background-color: #ddd;
+        }
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+        p{
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #fff;
+        }
+    }
+}
+
+.list{
+    padding: 100px 0;
+    background-color: #222;
+    ul{
+        width: 800px;
+        margin: 0 auto;
+    }
+    li{
+        height: 100px;
+        background-color: #fff;
+    }
+    li + li{
+        margin-top: 10px;
+    }
+}

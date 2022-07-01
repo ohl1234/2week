@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+  max-width: 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  margin: -1px;
+}
+
+header {
+  height: 100px;
+  background-color: #000;
+}
+
+footer {
+  height: 100px;
+  background-color: #ddd;
+}
+
+main > div:last-child section + section {
+  margin-top: 10px;
+}
+main .inner {
+  width: 800px;
+  margin: 10px auto;
+}
+main .inner .box1 {
+  display: flex;
+}
+main .inner .box1 div {
+  flex: 1;
+  height: 300px;
+  background-color: #f00;
+}
+main .inner .box1 .left {
+  margin-right: 10px;
+}
+main .inner .box1 .right {
+  position: relative;
+}
+main .inner .box1 .right .btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+}
+main .inner .box1 .right .prev {
+  left: 20px;
+}
+main .inner .box1 .right .next {
+  right: 20px;
+}
+main .inner .box2 {
+  padding: 10px;
+  background-color: #ddd;
+}
+main .inner .box2 > div {
+  display: flex;
+}
+main .inner .box2 .list1 {
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #fff;
+}
+main .inner .box2 .list1 div {
+  width: calc(80% - 5px);
+  height: 100px;
+  background-color: #ccc;
+}
+main .inner .box2 .list1 div:last-child {
+  width: calc(20% - 5px);
+}
+main .inner .box2 .list2 {
+  padding: 0 10px 10px 10px;
+  background-color: #fff;
+}
+main .inner .box2 .list2 div {
+  width: calc(30% - 5px);
+  height: 100px;
+  background-color: #ccc;
+}
+main .inner .box2 .list2 div:last-child {
+  flex: 1;
+  margin-left: 10px;
+}
+main .inner .box3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #aaa;
+}
+main .inner .box3 .notice {
+  line-height: 50px;
+}
+main .inner .box3 .navi {
+  display: flex;
+}
+main .inner .box3 .navi .btn {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+main .inner .box4 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main .inner .box4 ul li {
+  width: calc((100% - 30px) / 4);
+}
+main .inner .box4 ul li a {
+  display: block;
+  padding: 10px;
+  background-color: pink;
+}
+main .inner .box4 ul li a img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .inner .box4 ul li a strong {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff;
+}
+main .inner .box4 ul li a p {
+  padding: 10px;
+  background-color: #fff;
+}
+main .banner {
+  height: 100px;
+  background-color: #222;
+}

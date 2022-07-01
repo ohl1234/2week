@@ -1,0 +1,9 @@
+@import './abstracts/var';
+@import './abstracts/mixins';
+//abstracts
+@import './base/reset';
+//reset
+@import './layout/header2';
+@import './layout/footer';
+//layout
+@import './page/main2.scss'
